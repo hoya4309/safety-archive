@@ -1,28 +1,32 @@
-fetch('data/archive.json')
-.then(response=>response.json())
-.then(data=>{
+fetch("data/archive.json")
+    .then(response => response.json())
+    .then(data => {
 
-const gallery =
-document.getElementById('gallery');
+        const gallery = document.getElementById("gallery");
 
-data.forEach(item=>{
+        data.forEach(item => {
 
-gallery.innerHTML += `
-<div class="card">
+            gallery.innerHTML += `
+            
+            <div class="card">
 
-<h3>${item.title}</h3>
+                <h3>${item.title}</h3>
 
-<p>${item.type}</p>
+                <p><strong>구분 :</strong> ${item.type}</p>
 
-<p>${item.site}</p>
+                <p><strong>위험유형 :</strong> ${item.category}</p>
 
-${item.photo}
+                <p><strong>현장 :</strong> ${item.site}</p>
 
-<p>${item.description}</p>
+                <p><strong>날짜 :</strong> ${item.date}</p>
 
-</div>
-`;
+                ${item.photo}
 
-});
+                <p>${item.description}</p>
 
-});
+            </div>
+
+            `;
+        });
+
+    });
