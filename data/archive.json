@@ -1,0 +1,12 @@
+[
+    {
+        "id":1,
+        "title":"개구부 덮개 미설치",
+        "type":"부적합",
+        "category":"추락",
+        "site":"A현장",
+        "date":"2026-09-20",
+        "photo":"images/001.jpg",
+        "description":"개구부 추락 위험 확인"
+    }
+]
