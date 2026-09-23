@@ -8,6 +8,21 @@ h1 {
     color: #1e3a8a;
 }
 
+#search {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+}
+
 .card {
     background: white;
     border-radius: 10px;
